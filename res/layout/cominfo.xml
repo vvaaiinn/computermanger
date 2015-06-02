@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:textColor="@color/white" 
+      >  
+    <TextView 
+        android:id="@+id/tv1"
+        android:text="业务"  
+        android:gravity="center"  
+        android:layout_weight="5" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"  
+        android:textSize="17dip" 
+        android:textStyle="bold"  
+        android:textColor="#000000"       
+    />        
+    <TextView 
+        android:id="@+id/tv2"
+        android:text="IP"  
+        android:gravity="center"  
+        android:layout_weight="5" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"    
+        android:textSize="17dip" 
+        android:textStyle="bold"
+        android:textColor="#000000" /> 
+    
+    <TextView 
+        android:id="@+id/tv3"
+        android:text="状态"  
+        android:gravity="center"  
+        android:layout_weight="5" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"  
+        android:textSize="17dip" 
+        android:textStyle="bold" 
+        android:textColor="#000000"
+    />  
+   
+    <TextView 
+        android:id="@+id/tv4"
+        android:text="管理员"  
+        android:gravity="center"  
+        android:layout_weight="5" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"  
+        android:textSize="17dip" 
+        android:textStyle="bold" 
+        android:textColor="#000000"
+    />       
+    </LinearLayout> 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" 
+        android:background="@drawable/background_login_div" >
+
+    </ListView>
+    
+
+</LinearLayout>

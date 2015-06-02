@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bgd"
+    >
+    <!-- padding 内边距   layout_margin 外边距
+  		    android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/background_login_div"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/login_user_input"
+            android:textSize = "14sp"
+            android:textColor="#444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="帐号" />
+
+        <EditText
+            android:id="@+id/name"
+            android:textSize = "14sp"
+            android:textColor="#444"
+            android:layout_width="fill_parent"
+            android:numeric="integer"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_user_input"
+            android:hint="输入登入账号"
+            android:inputType="number"
+            android:paddingLeft="5px"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/login_password_input"
+            android:textSize = "14sp"
+            android:textColor="#444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="3dp"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/password"
+            android:textSize = "14sp"
+            android:textColor="#444"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/password"
+            android:layout_below="@id/password"
+            android:text="记住密码" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@drawable/shape"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/password"
+            android:layout_below="@+id/remember"       
+            android:background="@drawable/blue_btn"    
+            android:text="登录" />
+    </RelativeLayout>
+
+</LinearLayout>
