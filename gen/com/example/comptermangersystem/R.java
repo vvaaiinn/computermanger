@@ -1673,6 +1673,8 @@ containing a value of this type.
         public static final int item2=0x7f09004d;
         public static final int item3=0x7f09004e;
         public static final int item4=0x7f09004f;
+        public static final int item5=0x7f090059;
+        public static final int item6=0x7f09005a;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
         public static final int listview=0x7f09004b;
@@ -1715,6 +1717,8 @@ containing a value of this type.
         public static final int tv2=0x7f090048;
         public static final int tv3=0x7f090049;
         public static final int tv4=0x7f09004a;
+        public static final int tv5=0x7f090057;
+        public static final int tv6=0x7f090058;
         public static final int two=0x7f090043;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
@@ -1775,6 +1779,8 @@ containing a value of this type.
         public static final int infoitem=0x7f030019;
         public static final int login_activity=0x7f03001a;
         public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int total=0x7f03001c;
+        public static final int totalitem=0x7f03001d;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

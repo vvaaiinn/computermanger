@@ -51,6 +51,7 @@ public class GetPostUtil {
 					conn.getInputStream(), "UTF-8"));
 			String line;
 			while ((line = in.readLine()) != null) {
+				// System.out.println(line);
 				result.append(line);
 			}
 		} catch (Exception e) {

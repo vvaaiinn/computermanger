@@ -47,6 +47,7 @@ public class MainActivity extends ActivityGroup {
 			public void onClick(View v) {
 				// TODO 自动生成的方法存根
 				flag = 2;
+				showView(flag);
 
 			}
 		});
@@ -87,7 +88,12 @@ public class MainActivity extends ActivityGroup {
 			bodyView.addView(getLocalActivityManager().startActivity("one",
 					intent).getDecorView());
 			break;
-
+		case 2:
+			bodyView.removeAllViews();
+			Intent intent2 = new Intent(MainActivity.this, Total.class);
+			bodyView.addView(getLocalActivityManager().startActivity("two",
+					intent2).getDecorView());
+			break;
 		default:
 			break;
 		}
